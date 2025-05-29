@@ -25,6 +25,52 @@ footer {
     margin: 0 auto;
 }
 
+/*flex...*/
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /* This vertically centers the .flex-item children */
+}
+
+.flex-item {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+/* Style logo image */
+header img {
+    width: 110px;
+    height: auto;
+}
+
+/* Vertically center nav content */
+.nav {
+    display: flex;
+    align-items: center;
+    /* Vertically center the <ul> inside the <nav> */
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+header,
+footer {
+    background-color: #055a05;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -37,6 +83,118 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+nav {
+    min-height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li a {
+    padding: 1rem 2rem;
+    background-color: #264653;
+    border: solid 1px #e9c46a;
+    border-top: none;
+    border-bottom: none;
+    color: #f4a261;
+    text-decoration: none
+}
+
+nav li a:hover {
+    padding: 1rem 2rem;
+    background-color: #055a05;
+    color: #e9c46a;
+    text-decoration: none
+}
+
+section img {
+    width: 150px;
+    height: auto;
+}
+
+.history-container {
+    background: #e9c46a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 15px 0;
+    padding: 1rem;
+    /* Optional: adds spacing inside container */
+    text-align: center;
+    /* Centers the h2 text */
+}
+
+.history-container h2 {
+    width: 100%;
+    /* Take full width of the container */
+    text-align: center;
+    /* Center the heading text */
+    margin-bottom: 1rem;
+    /* Space between heading and content */
+}
+
+.history-item {
+    width: 220px;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.adventure-container {
+    background: #e9c46a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 15px 0;
+    padding: 1rem;
+    /* Optional for spacing */
+    text-align: center;
+    /* This will affect the h2 inside */
+}
+
+.adventure-container h2 {
+    width: 100%;
+    /* Make sure it spans across the container */
+    text-align: center;
+    /* Center the heading text */
+    margin-bottom: 1rem;
+    /* Add space between h2 and the images */
+}
+
+.adventure-item {
+    display: inline-block;
+    width: 140px;
+    margin: 0.5rem;
+    padding: 0rem;
+}
+
+
+/*footer*/
+.footer-container {
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0 auto;
+    height: 75px;
+    color: #fff;
+}
+
+.footer-item {
+    display: inline-block;
+    width: 140px;
+    margin: 0;
+    padding: 0rem;
 }
 
 .socialmedia a {
@@ -66,6 +224,14 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    background: #264653;
+    position: absolute;
+    top: 250px;
+    opacity: .75;
     color: #fff;
 }
 
