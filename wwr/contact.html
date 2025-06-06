@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title> White Water Rafting Co. | contact page </title>
+    <title>Contact page of White Water Rafting Company </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Daniel Boateng,WDD130 course, wwr contact page">
@@ -54,32 +54,33 @@
                 <strong> Email:</strong>wwr@gmail.com
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2666.8857037497887!2d-0.23437060447499133!3d5.606620161602687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9981e5cbf6a9%3A0x5467d65a819e486e!2sTesano%20Sports%20Club!5e0!3m2!1sen!2sgh!4v1749058729204!5m2!1sen!2sgh"
-                    width="180" height="auto" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    width="180" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </p>
             <form class="form-item">
                 <div class="form-item column">
-                    <label for="fullname column2">User name:</label>
-                    <input class="column3">
+                    <label>User name:</label>
+                    <input type="text" class="column3" name="username" id="username">
                 </div>
                 <div class="form-item column">
                     <label>Email:</label>
-                    <input class="column3">
+                    <input type="email" class="column3" name="email" id="email">
                 </div>
                 <div class="form-item column">
                     <fieldset class="form-item column">
                         <legend>Purpose of your message</legend>
-                        <label>General Inquiry: <input type="radio"></label>
-                        <label>Reservation Question: <input type="radio"></label>
+                        <label>General Inquiry: <input type="radio" name="inquiry" id="inquire"></label>
+                        <label>Reservation Question: <input type="radio" name="question" id="question"></label>
 
-                        <label>Website Suggestion: <input type="radio"></label>
+                        <label>Website Suggestion: <input type="radio" name="suggestion" id="suggestion"></label>
 
                         <label>Please type your message here:</label>
-                        <textarea rows="4" placeholder="Your message" class="column2"></textarea>
+                        <textarea rows="4" placeholder="Your message" class="column2" name="message"
+                            id="message"></textarea>
                     </fieldset>
                 </div>
-                <label class="column3">Please subscribe me to the monthly newsletter: <input type="checkbox"></label>
-                <button type="submit" class="column4">Submit</button>
+                <label class="column3">Please subscribe me to the monthly newsletter: <input type="checkbox"
+                        name="subscribe" id="subscribe"></label>
+                <button type="submit" class="column4" name="submit" id="submit">Submit</button>
             </form>
 
         </section>
