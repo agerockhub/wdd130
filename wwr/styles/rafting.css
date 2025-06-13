@@ -143,9 +143,53 @@ section img {
 .history-item {
     width: 220px;
     margin: 1rem;
+    height: auto;
     padding: 0.5rem;
 }
 
+/*ind. PAGE START*/
+.ind-container {
+    background: #e9c46a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 15px 0;
+    padding: 1rem;
+    /* Optional: adds spacing inside container */
+    text-align: center;
+    /* Centers the h2 text */
+}
+
+.ind-container h2 {
+    width: 100%;
+    /* Take full width of the container */
+    text-align: left;
+    padding-left: 40px;
+    /* Center the heading text */
+    margin-bottom: 1rem;
+    /* Space between heading and content */
+}
+
+.ind-item {
+    width: 350px;
+    margin: 1rem;
+    height: auto;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.ind-item2 {
+    width: 350px;
+    margin: 1rem;
+    height: auto;
+    padding: 0.5rem;
+    text-align: left;
+    background-color: #fff;
+}
+
+/*ind. PAGE END*/
 /*FORM START*/
 .form-container {
     background: #e9c46a;
@@ -271,6 +315,25 @@ h1 {
     width: 125px;
 }
 
+/*news letter subscription form start*/
+.form {
+    width: 310px;
+    background: #264653;
+    position: absolute;
+    top: 250px;
+    opacity: .75;
+    color: #fff;
+}
+
+.news-letter {
+    margin: 1rem;
+}
+
+.news-letter1 {
+    padding: 1rem;
+}
+
+/*news letter subscription form end*/
 .form-item {
     display: grid;
     align-items: center;
@@ -304,3 +367,30 @@ h1 {
     color: #fff;
     text-decoration: none;
 }
+
+/*table start*/
+table {
+    width: 80%;
+    margin: 50px auto;
+    /* Center table horizontally */
+    border-collapse: collapse;
+    text-align: center;
+    /* Horizontal center for text */
+}
+
+th,
+td {
+    border: 1px solid #444;
+    padding: 20px;
+    vertical-align: middle;
+    /* Vertical center */
+    height: 100px;
+    /* Ensures vertical alignment is noticeable */
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/*table end*/
